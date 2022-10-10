@@ -39,10 +39,10 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#research">Research</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#CV">CV</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#CV">Resume</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
@@ -55,12 +55,13 @@
   <!-- Masthead -->
   <header class="masthead bg-primary text-secondary text-center">
     <div class="container d-flex align-items-center flex-column">
+      <section id="about">
 
       <!-- Masthead Avatar Image -->
       <img class="masthead-avatar mb-5 rounded-circle img-thumbnail" src="img/dp.jpg" alt="">
 
       <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">Md. Saqib Hasan</h1>
+      <h1 class="masthead-heading text-uppercase mb-0">Mohammad Saqib Hasan</h1>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -72,17 +73,32 @@
       </div>
 
       <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-bold mb-0">Computer Engineer - Data Scientist - History Geek - Traveller</p>
+      <p class="masthead-subheading font-weight-bold mb-0">Computer Scientist - Researcher - History Geek - Traveller</p>
       <br>
-      <section id="about">
-        <p class="lead">Hi!! My name is Mohammad(Md.) Saqib Hasan. I graduated with a bachelors in computer science and engineering from Bangladesh University of Engineering and Technology (BUET). I am currently working as a research assistant under Professor Dr. Muhammad Abdullah Adnan in his "Applied Machine Learning" lab in BUET.</p>
+      
 
-        <p class="lead">My field of research involves machine learning and application, mainly in the fields of deep learning or neural network. As part of undergraduate research, I worked on correlating our current statistical neural models with the human brain in order to develop faster and better models. During my time as research assistant, I worked in developing models for distributed deep learning through feature extraction, compression methods for deep neural networks and development of fake news detection through natural language processing. More details about my research is <a href="#about">here</a></p>
+        <p class="lead"> Hi!! I am Mohammad (Md.) Saqib Hasan, a CS Ph.D. student at Stony Brook University. 
+          My research is along the line of natural language processing, in particular semantic parsing of specifications, under
+          the mentorship of Professor Niranjan Balasubramanian in the Language Reasoning and Understanding (LUNR) lab.
+        </p>
 
-        <p class="lead">When I am not busy in the lab running simulations or brainstorming new research ideas, I am either enjoying a cup of hot tea by the local teashop while going through the latest gossips in the realm of politics, philosophy and history. Otherwise, I am on my home computer mashing through some new video game or planning my next trip to unknown lands and cultures. </p>
-      </section>
+        <p class="lead">
+          My undergraduate alma mater is Bangladesh University of Engineering and Technology (BUET). Before my Ph.D., I worked as 
+          as research engineer at BUET for a couple of years under Professor Muhammad Abdullah Adnan, where my work encompassed a 
+          range of machine learning applications ranging from automated fake news detection to developing compression algorithms for 
+          neural networks.
+        </p>
+
+        <p class="lead">When I am not busy in the lab running simulations or brainstorming new research ideas, 
+          I am either enjoying a cup of hot beverage while going through the latest 
+          gossips in the realm of politics, philosophy and history. Otherwise, I am on my 
+          home computer mashing through some new video game or planning my next drive to some new wilderness.
+        </p>
+
+      
       </div>
-
+    
+    </section>
     </div>
   </header>
 
@@ -101,80 +117,172 @@
         <div class="divider-custom-line"></div>
       </div>
 
+
+      <div class="row">
+              <!-- Portfolio Item 1 -->
+        <div class="col-md-8 col-lg-6">
+          <u><h3>Expert Knowledge Augmented Semantic Parsing of Network File System (NFS) Specifications</h3></u>
+          <p>
+            In this project, I am developing models based on the Transformer architecture that can incorporate previously
+            unseen domain expert knowledge incontext, given via a lexicon, during generation of formal language statements
+            from natural language specifications. The models are being developed in order to parse operation descriptions
+            from the Network File System (NFS) documents known as Request for Comments (RFCs).
+          </p>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-8 col-lg-6">
+          <u><h3>Active Learning Augmented Fake News Detection</h3></u>
+          <p>
+            In this project, I develop pool-based active learning methodologies in order to reduce the burden of
+            procuring large amounts of labelled data in order to train supervised models for fake news detection.
+            Combining the common uncertainty based active learning algorithms along with an one-for-all model, I was
+            able to reduce the amount of annotations needed to as low as 4% on certain benchmark datasets. This work has been
+            accepted in the <strong>International Conference on Advances in Social Networks Analysis and Mining (ASONAM), 2020</strong>
+            and the link is here <a href="https://ieeexplore.ieee.org/document/9381422">&#128279</a>.
+          </p>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
       
       <div class="row">
-        <h3>Neuro-scientific Analysis of Weights</h3>
-        <h4>Authors: Md. Saqib Hasan, Rukshar Alam, Muhammad Abdullah Adnan</h4>
 
-        <div class="col-md-4 col-lg-6">
-            <img class="img-fluid" src="img/initializations.png" alt="">
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-6 col-lg-6">
+          <u><h3>Neuro-scientific Analysis of Weights</h3></u>
+          <p>
+            In this project, I work on bridging the gap between the biological brain and the statistical neural network. The project
+            involved developing different weight initialization algorithms based upon synaptic distribution inside the mammalian cerebral
+            cortext. Results indicated that our algorithms were good initial weights in comparison to current state-of-the-art and showed
+            positive correlation with model performance. This work has been published in the <strong>International Journal of Pattern 
+            Recognition and Artificial Intelligence (IJPRAI)</strong> and can be found here <a href="https://www.worldscientific.com/doi/10.1142/S0218001421520212">&#128279</a>.
+          </p>
         </div>
 
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-8 col-lg-6">
+        <!-- Portfolio Item 4 -->
+        <div class="col-md-6 col-lg-6">
+          <u><h3>Compressing Deep Learning Models Using Dimensionality Reduction and Quantization</h3></u>
+          
           <p>
-            In this work, we perform two research tasks concerned with the weights of neural networks. First, we develop three novel weight initialization algorithms inspired from the neuro-scientific construction of the brain of mammals and then test them on benchmark datasets to assess the performance of these algorithms. We call them lognormal weight initialization, modified lognormal weight initialization and skewed weight initialization. Secondly, we analyze the influence of training an artificial neural network on its weight distribution using skewness, kurtosis and linear regression for different weight initializations. Our analysis provides further insight into understanding the inner mechanism of neural networks.
+            In this project, I combine the dimensionality reduction algorithm known as Principal Component Analysis along with 
+            clustering algorithm based quantization in order to create a methodology that can compress a neural network into a
+            smaller architecture via parameter matrix size reduction. My work was able to compress models upto 35 times on certain
+            benchmark with little to no loss in performance. This work has been published in <strong>Applied Intelligence, Springer</strong>
+            and can be found here <a href="https://link.springer.com/article/10.1007/s10489-022-03221-z">&#128279</a>.
+          </p>
+        </div>
+
+      </div>
+      
+      
+    </div>
+  </section>
+
+
+  
+
+
+
+  <!-- Notable Projects Section -->
+  <section class="page-section bg-primary text-secondary portfolio" id="projects">
+    <div class="container">
+      <!-- Notable Project Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Notable Projects</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+
+      <!-- Project Row 1 -->
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <h3>Weakly Supervised Active Learning Scenario for Named Entity Recognition in Difficult Annotation Settings</h3>
+          <p>
+          In this project, I developed a training methodology that combines weak supervision and active learning
+          in a single setting to get more performance with lower amounts of annotated data for the named entity recognition problem.
+          This is done by first training the model on weakly generated labels (labels expressing existence of entity in a statement)
+          and then transfer learning the learnt model to train on fine-grained examples that are optimally selected using active learning
+          methods. The link to the report is 
+          <a href="https://drive.google.com/file/d/1Bl74Za2cZdeK4xwbyC6rj1S6nEl_h47S/view?usp=sharing">here</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+          <h3>Understanding the Variables Affecting Covid-19 Vaccination Rates Across Counties in the United States</h3>
+          <p>
+          This project involved analysis the various elements that are affecting the distribution and immunization of
+          the population against Covid-19 across the different counties in the United States of America. Along with 
+          analysing vaccination rates with respect to socio-economic variables, I also observed the sentiment of the 
+          tweets from Twitter that are related to the Covid vaccine. In the end, I developed machine learning models 
+          that were able to predict future vaccination rates for each of the county. The link to the report is 
+          <a href="https://drive.google.com/file/d/1KtoxjocjG-UbGzBSJcOjmu4wwEnXNOwx/view?usp=sharing">here</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+
+          <h3>Connect Four Game System Based on LED and Microcontroller</h3>
+          <p>
+            This was a project during the third year of undergraduate education for the 
+            "Micro-controller" course. The popular Connect-Four game system is designed using 
+            AT-Mega 32 on a screen of 4 LED Matrix display. Controls are implemented using Gyro sensor. 
+            The micro-controller based game system is programmed for two players or one player against an AI, 
+            developed using the Minimax algorithm. A sample video of the application is available at this 
+            <a href="https://www.youtube.com/watch?v=6vwa2kxnJWQ">link</a>.
           </p>
         </div>
       </div>
-
-      <br>
-      <br>
+      
 
       <div class="row">
-        <strong><h3>Compressing Deep Learning Models Using Dimensionality Reduction for Small Devices and the Web</h3></strong>
-        <h4>Authors: Md. Saqib Hasan, Rukshar Alam, Muhammad Abdullah Adnan</h4>
 
-        <div class="col-md-4 col-lg-6">
-            <img class="img-fluid" src="img/compression.PNG" alt="">
+        <!-- Project Row 2 -->
+        <div class="col-md-4 col-lg-4">
+          <h3>Edu Engineer</h3>
+          <p>
+            This was a mobile application developed using Java and Android Studio 
+            during my second year as part of an international contest IEEEMadC 2016. 
+            It was designed to provide a mobile based platform for sharing information 
+            about research and programming,aimed at junior year electrical and computer 
+            science students. A sample video of the application is available at this 
+            <a href=https://www.youtube.com/watch?v=0qxA7HB8G1E&t=25s>link</a>
+            and the code is
+            <a href="https://github.com/SaqibHasanComputerEngineer/Projects/blob/master/Project_Codes/IeeeMadC.zip">here</a>.
+          </p>
         </div>
 
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-8 col-lg-6">
+        <div class="col-md-4 col-lg-4">
+          <h3>Posture Corrector</h3>
           <p>
-            Deep learning has become the go-to method for solving a number of hard and complex problems. However, one constraint regarding the use of deep learning is that the size of the models is too large for storage on small devices and transmitting across the web. Hence, in this work we present a novel solution on compressing large neural network models for storage on small, embedded devices and the internet. Our algorithms utilize the power of the dimensionality reduction algorithm, Principle Component Analysis, to decompose the network parameters into smaller matrices for storage and distribution. When required, the compressed data can easily be decompressed into the parameters by our algorithms for inference/usage.
+            This was a project during the fourth year of undergraduate education, 
+            as part of the "Digital Systems Design" course. Due to rise of backpain as 
+            a result of sitting in irregular positions for a long time, we devised an 
+            Arduino based system that alarms a person when he/she is not sitting properly. A sample video of the application is available at this 
+            <a href="https://www.youtube.com/watch?v=GT-EK-BAURk&t=2s">link</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+          <h3>Crime Watch</h3>
+          <p>
+            This project is a mobile application developed using the Ionic and Django framework as part of 
+            the "Software Design" course during the third year of undergraduate studies. The application 
+            enables the user to report and learn about the crimes and various criminal statistics about 
+            areas and neighbourhoods close to their location. The code for this project is available at 
+            this <a href="https://github.com/SaqibHasanComputerEngineer/Undergraduate_Codes/tree/master/Codes/Level_3_Term_2/Software_Design/Project">link</a>.
           </p>
         </div>
       </div>
 
-      <br>
-      <br>
-
-      <div class="row">
-        <strong><h3>Geo-distributed Deep Learning Using Feature Extraction on Big Data</h3></strong>
-        <h4>Authors: Md. Saqib Hasan, Rukshar Alam, Muhammad Abdullah Adnan</h4>
-
-        <div class="col-md-4 col-lg-6">
-            <img class="img-fluid" src="img/distDL.png" alt="">
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-8 col-lg-6">
-          <p>
-            Digital data have been growing at an exponential rate in the past couple of years, mainly due to the wide availability and use of internet and social media. This "Big Data" is stored in various data centers across the globe. Such type of Big Data has now come to be exclusively known as Geo-distributed Data. Geo-distributed data have two constraints: the data are too big and it is too expensive, in terms of bandwidth, to bring all the data to a single node/data center; regional laws and data privacy measures prevent data from being easily moved out of their respective data centers. These constraints have generated a whole new set of machine learning problems directed towards geo-distributed data, collectively known as Geo-distributed Data Analytics. In this work, we propose a novel deep learning system for geo-distributed data based on feature extraction. The system is divided into two abstraction layers: local application layer and global application layer. The local layer uses neural network to extract features from data present in its own node.These features are extracted by local neural networks of each node and sent to the global layer at the central node. At the central node, another neural network train on these feature vector. In this way, the global model combines the local models. Our system also helps preserve privacy since it is difficult to recreate original data from extracted features which are transmitted through the network.
-          </p>
-        </div>
-      </div>
-
-
-      <br>
-      <br>
-
-      <div class="row">
-        <strong><h3>Application of deep learning for the automated classification of fake news</h3></strong>
-        <h4>Authors: Md. Saqib Hasan, Rukshar Alam, Muhammad Abdullah Adnan</h4>
-
-        <div class="col-md-4 col-lg-6">
-            <img class="img-fluid" src="img/fake news.jpg" alt="">
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-8 col-lg-6">
-          <p>
-            The circulation of fake news has increased exponentially in recent years, especially with the advent of social media and automated messaging systems. Spikes in propagation was recently seen during and after the US 2016 elections, where people and bots from both spectrum of the political sphere were engaged in spreading of false and unverified information. With information propagating so fast on the internet, it is impossible to verify and corroborate every piece of information without clogging up the information highway. Hence, there has been a surge recently among researchers for automated, accurate and fast ways to detect fake news on the internet. In this research, we work towards creating a novel neural network architecture for optimal classification of fake news.
-          </p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -198,133 +306,6 @@
       <center>
       <h1>My CV is attached <a href="img/ActualCV.pdf">here</a>.
       </center>
-    </div>
-  </section>
-
-
-
-  <!-- Notable Projects Section -->
-  <section class="page-section bg-primary text-secondary portfolio" id="projects">
-    <div class="container">
-      <!-- Notable Project Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Notable Projects</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-bolt"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-      <h2>Edu Engineer</h2>
-
-      <div class="row">
-        
-
-        <div class="col-md-4 col-lg-6">
-            <img class="img-fluid" src="img/eduman.jpg" alt="">
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-8 col-lg-6">
-          <br>
-          <br>
-          <h6>
-            This was a mobile application developed using Java and Android Studio during my second year as part of an international contest IEEEMadC 2016. It was designed to provide a mobile based platform for sharing information about research and programming,aimed at junior year electrical and computer science students. A sample video of the application is available at this <a href="https://github.com/SaqibHasanComputerEngineer/Projects/blob/master/Project_Codes/IeeeMadC.zip">link</a>.
-          </h6>
-        </div>
-      </div>
-
-
-
-      <h2>Connect Four Game System Based on LED and Microcontroller</h2>
-
-      <div class="row">
-        
-
-        <div class="col-md-4 col-lg-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6vwa2kxnJWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-8 col-lg-6">
-          <br>
-          <br>
-          <h6>
-            This was a project during the third year of undergraduate education for the "Micro-controller" course. The popular Connect-Four game system is designed using AT-Mega 32 on a screen of 4 LED Matrix display. Controls are implemented using Gyro sensor. The micro-controller based game system is programmed for two players or one player against an AI, developed using the Minimax algorithm.
-          </h6>
-        </div>
-      </div>
-
-      <br>
-      <br>
-
-
-      <h2>Posture Corrector</h2>
-
-      <div class="row">
-        
-
-        <div class="col-md-4 col-lg-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GT-EK-BAURk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-8 col-lg-6">
-          <br>
-          <br>
-          <h6>
-            This was a project during the fourth year of undergraduate education, as part of the "Digital Systems Design" course. Due to rise of backpain as a result of sitting in irregular positions for a long time, we devised an Arduino based system that alarms a person when he/she is not sitting properly. 
-          </h6>
-        </div>
-      </div>
-
-      <br>
-      <br>
-
-
-
-      <h2>Crime Watch</h2>
-      <div class="row">
-        <div class="col-md-4 col-lg-6">
-            <img class="img-fluid" src="img/crimeWatch.png" alt="">
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-8 col-lg-6">
-          <br>
-          <br>
-          <h6>
-            This project is a mobile application developed using the Ionic and Django framework as part of the "Software Design" course during the third year of undergraduate studies. The application enables the user to report and learn about the crimes and various criminal statistics about areas and neighbourhoods close to their location.
-            The code for this project is available at this <a href="https://github.com/SaqibHasanComputerEngineer/Undergraduate_Codes/tree/master/Codes/Level_3_Term_2/Software_Design/Project">link</a>.
-          </h6>
-        </div>
-      </div>
-
-      <br>
-      <br>
-
-
-      <h2>Onubadok: A Seq2Seq with Attention Model for English to Bangla Translation</h2>
-      <div class="row">
-        <div class="col-md-4 col-lg-6">
-            <img class="img-fluid" src="img/seq2seq.jpg" alt="">
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-8 col-lg-6">
-          <br>
-          <br>
-          <h6>
-            This deep learning project was developed as part of the "Machine Learning" course during the final year of undergraduate studies. It is English to Bangla automatic translation application developed using the state of the art natural language processing technique, aka Attention Mechanism. It modifies the Seq2Seq, encoder-decoder neural network model for machine translation to incorporate attention mechanism into it and was developed using Python, Tensorflow and Keras. The code of the project is available <a href="https://github.com/SaqibHasanComputerEngineer/Undergraduate_Codes/tree/master/Codes/Level_4_Term_2/ML/Project/Machine_Translation">here</a>.
-          </h6>
-        </div>
-      </div>
-
-
-
-
     </div>
   </section>
 
@@ -356,15 +337,18 @@
         <div class="divider-custom-line"></div>
       </div>
 
-      <div class="row">
-        <h3>Applied Machine Learning Lab, Department of Computer <br> Science and Engineering,</h3><br>
-        <h3>ECE Building, West Palashi,</h3><br>
-        <h3>Bangladesh University of Engineering and Technology,</h3><br>
-        <h3>Dhaka-1000, Bangladesh.</h3><br>
-      </div>
+      <div class="row"><h4>Language Understanding and Reasoning Lab,</h4></div>
+      <div class="row"><h4>Department of Computer Science,</h4></div>
+      <div class="row"><h4>Stony Brook University, New York,</h4></div>
+      <div class="row"><h4>USA</h4></div>
+
+    
 
       <div class="row">
-        <h4>Email: msaquibhasan@gmail.com</h4>
+        <h5>Email: msaquibhasan@gmail.com</h5>
+      </div>
+      <div class="row">
+        <h5>Email: mdsaqib.hasan@stonybrook.edu</h5>
       </div>
 
       <div class="row">
@@ -373,7 +357,7 @@
           <a class="btn btn-outline-dark btn-social mx-1" href="https://www.facebook.com/saqib.hasan.35">
             <i class="fab fa-fw fa-facebook-f"></i>
           </a>
-          <a class="btn btn-outline-dark btn-social mx-1" href="https://github.com/SaqibHasanComputerEngineer">
+          <a class="btn btn-outline-dark btn-social mx-1" href="https://github.com/SaqibHasan057">
             <i class="fab fa-fw fa-github"></i>
           </a>
           <a class="btn btn-outline-dark btn-social mx-1" href="https://www.linkedin.com/in/saqib-hasan-a4b326121/">
@@ -387,6 +371,8 @@
         
 
       </div>
+
+   
 
     </div>
   </section>

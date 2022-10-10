@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 [tabindex="-1"]:focus {
@@ -398,7 +398,7 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -442,7 +442,7 @@ small,
 mark,
 .mark {
   padding: 0.2em;
-  background-color: #fcf8e3;
+  background-color: #ffffff;
 }
 
 .list-unstyled {
@@ -6205,7 +6205,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #f0f0e1 !important;
+  background-color: #ffffff !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6221,7 +6221,7 @@ button.bg-primary:focus {
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #1a252f !important;
+  background-color: #ffffff !important;
 }
 
 .bg-success {
@@ -9706,7 +9706,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .masthead .masthead-heading {
-  font-size: 2.75rem;
+  font-size: 2rem;
   line-height: 2.75rem;
 }
 
