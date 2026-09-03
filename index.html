@@ -3,392 +3,516 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Saqib Hasan</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <title>Mohammad Saqib Hasan</title>
+    <meta name="description" content="Mohammad Saqib Hasan — Ph.D. candidate in Computer Science at Stony Brook University, researching code generation with large language models in the LUNR lab.">
+    <meta name="author" content="Mohammad Saqib Hasan">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Mohammad Saqib Hasan">
+    <meta property="og:description" content="Ph.D. candidate in Computer Science at Stony Brook University, researching code generation with large language models.">
+    <meta property="og:image" content="img/dp.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%232b5c8a'/><text x='50' y='72' font-family='Georgia,serif' font-size='62' font-weight='600' fill='white' text-anchor='middle'>S</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        /* Applied before first paint so the chosen theme never flashes. */
+        try {
+            var t = localStorage.getItem("theme");
+            if (t === "dark" || t === "light") {
+                document.documentElement.setAttribute("data-theme", t);
+            }
+        } catch (e) {}
+    </script>
+
+    <script src="js/site.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#intro">Mohammad Saqib Hasan</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#intro">Intro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#publications">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cv">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="intro-content">
-                <div class="intro-image">
-                    <img src="./img/dp.jpg" alt="Your Name" />
-                </div>
-                <div class="intro-text">
-                    <h1 class="intro-title">Mohammad Saqib Hasan</h1>
-                    <p class="intro-subtitle">Ph.D. Candidate in Computer Science</p>
-                    <!-- <p class="intro-degree">Specializing in Natural Language Processing</p> -->
-                    <p class="intro-description">
+    <!-- Icon sprite -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+        </symbol>
+        <symbol id="i-scholar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/>
+        </symbol>
+        <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.6 4.7 18.6 5 18.6 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/>
+        </symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM7.1 20.4H3.5V9h3.6v11.4ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-.9-.8-1.7-1.8-1.7Z"/>
+        </symbol>
+        <symbol id="i-x" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.22-6.82-5.96 6.82H1.68l7.73-8.84L1.25 2.25h6.82l4.71 6.23 5.46-6.23Zm-1.16 17.52h1.83L7.01 4.13H5.05l12.03 15.64Z"/>
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>
+        </symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+        </symbol>
+        <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+        </symbol>
+        <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </symbol>
+        <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+        </symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </symbol>
+    </svg>
+
+    <!-- Navigation -->
+    <header class="nav">
+        <nav class="container nav__inner" aria-label="Primary">
+            <a class="nav__brand" href="#intro">Mohammad Saqib Hasan</a>
+
+            <button class="nav__btn nav__theme" type="button" data-theme-toggle aria-label="Switch to dark theme">
+                <svg class="icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+                <svg class="icon-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+            </button>
+
+            <button class="nav__btn nav__toggle" type="button" data-nav-toggle aria-controls="nav-list" aria-expanded="false" aria-label="Menu">
+                <svg aria-hidden="true"><use href="#i-menu"></use></svg>
+            </button>
+
+            <ul class="nav__list" id="nav-list">
+                <li><a class="nav__link" href="#intro">Intro</a></li>
+                <li><a class="nav__link" href="#work">Work</a></li>
+                <li><a class="nav__link" href="#education">Education</a></li>
+                <li><a class="nav__link" href="#publications">Publications</a></li>
+                <li><a class="nav__link" href="#projects">Projects</a></li>
+                <li><a class="nav__link" href="#cv">CV</a></li>
+                <li><a class="nav__link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Intro -->
+        <section id="intro" class="hero">
+            <div class="container hero__inner">
+                <img class="hero__portrait" src="./img/dp.jpg" width="260" height="300"
+                     alt="Portrait of Mohammad Saqib Hasan">
+
+                <div>
+                    <h1 class="hero__name">Mohammad Saqib Hasan</h1>
+
+                    <p class="hero__meta">
+                        <span>Ph.D. Candidate in Computer Science</span>
+                        <span class="dot" aria-hidden="true"></span>
+                        <span>Stony Brook University</span>
+                    </p>
+
+                    <p class="hero__bio">
                         Hi everyone! I am Saqib, a fifth year Ph.D candidate at department of Computer Science at Stony Brook University, working at the Language Understanding and Reasoning (LUNR) lab under Professor Niranjan Balasubramanian. My research focuses on improving the code generation ability of language models using a plethora of techniques ranging from synthetic teacher distillation to preference optimization. Outside of work, I enjoy exploring the latest advancements in current affairs and the restaurant scene around my current town.
                     </p>
-                    <div class="mt-4">
-                        <!-- <a href="#contact" class="btn btn-primary me-3">Contact</a>
-                        <a href="#publications" class="btn btn-outline-primary">Publications</a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Work Section -->
-    <section id="work" class="section">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Applied Scientist Intern</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Amazon</h6>
-                            <p class="card-text">
-                                Developed GenAI systems for automated SOP creation and analysis of large-scale databases using advanced retrieval augmented generation techniques, problem-centric tool creation and multi-agent framework. 
-                            </p>
-                            <div class="mt-3">
-                                <span class="badge-custom">RAG</span>
-                                <span class="badge-custom">Multi-Agent</span>
-                                <span class="badge-custom">GenAI</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Research Engineer</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Bangladesh University of Engineering & Technology (BUET)</h6>
-                            <p class="card-text">
-                                Conducted research on developing novel weight initialization for deep learning models, improving the paraemeter efficiency of neural networks using compression techniques and integrating active learning optimization strategies for efficient fake news detection.
-                            </p>
-                            <div class="mt-3">
-                                <span class="badge-custom">Neural Compression</span>
-                                <span class="badge-custom">Weight Initialization</span>
-                                <span class="badge-custom">Active Learning</span>
-                            </div>
-                        </div>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="./cv/Mohammad_Saqib_Hasan_CV.pdf">
+                            <svg aria-hidden="true"><use href="#i-download"></use></svg>
+                            Download CV
+                        </a>
+                        <a class="btn" href="https://scholar.google.com/citations?user=JO4sZ1EAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+                            <svg aria-hidden="true"><use href="#i-scholar"></use></svg>
+                            Google Scholar
+                        </a>
+                        <a class="btn" href="https://github.com/SaqibHasan057" target="_blank" rel="noopener noreferrer">
+                            <svg aria-hidden="true"><use href="#i-github"></use></svg>
+                            GitHub
+                        </a>
+                        <a class="btn" href="mailto:mdsaqib.hasan@stonybrook.edu">
+                            <svg aria-hidden="true"><use href="#i-mail"></use></svg>
+                            Email
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Aug 2021 - Present</div>
-                    <div class="timeline-title">Ph.D. in Computer Science</div>
-                    <div class="timeline-institution">Stony Brook University</div>
-                    <div class="Advisor"><em>Advisor</em> : Niranjan Balasubramanian</div>
-                    <div class="Dissertation"><em>Dissertation</em> : Advancing Code Generation through Context</div>
-                </div>
-                <!-- <div class="timeline-item">
-                    <div class="timeline-date">2019 - 2021</div>
-                    <div class="timeline-title">Master of Science in Computer Science</div>
-                    <div class="timeline-institution">University Name</div>
-                    <p class="mt-2">Focused on machine learning and computational linguistics. Thesis on neural machine translation.</p>
-                </div> -->
-                <div class="timeline-item">
-                    <div class="timeline-date">Jul 2014 - Oct 2018</div>
-                    <div class="timeline-title">Bachelor of Science in Computer Science</div>
-                    <div class="timeline-institution">Bangladesh University of Engineering and Technology (BUET)</div>
-                    <div class="Ranking">Graduated with Honors (Rank 20 out of 138)</div>
-                    <div class="Advisor"><em>Advisor</em> : Muhammad Abdullah Adnan</div>
-                    <div class="Dissertation"><em>Thesis</em> : Analysis of Weight Distribution and Initialization in Neural Network Inspired by Neuro-science</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <div class="publication-item">
-                <div class="publication-title">
-                    Teaching an Old LLM Secure Coding: Localized Preference Optimization with Distilled Preferences <a href="https://arxiv.org/abs/2506.00419" style="color: inherit; text-decoration: none;">🔗</a>
-                </div>
-                <div class="publication-authors">
-                    Mohammad Saqib Hasan, Saikat Chakraborty, Santu Karmaker, Niranjan Balasubramanian
-                </div>
-                <div class="publication-venue">
-                    The 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)
-                </div>
-            </div>
-            <div class="publication-item">
-                <div class="publication-title">
-                    Handling Open-Vocabulary Constructs in Formalizing Specifications: Retrieval Augmented Parsing <a href="https://arxiv.org/abs/2509.08808" style="color: inherit; text-decoration: none;">🔗</a>
-                </div>
-                <div class="publication-authors">
-                    Mohammad Saqib Hasan, Sayontan Ghosh, Dhruv Verma, Geoff Kuenning, Erez Zadok, Scott Smolka, Niranjan Balasubramanian
-                </div>
-                <div class="publication-venue">
-                    First Conference on Language Modelling (COLM 2024)
-                </div>
-            </div>
-            <div class="publication-item">
-                <div class="publication-title">
-                    Truth or lie: Pre-emptive detection of fake news in different languages through entropy-based active learning and multi-model neural ensemble <a href="https://ieeexplore.ieee.org/abstract/document/9381422" style="color: inherit; text-decoration: none;">🔗</a>
-                </div>
-                <div class="publication-authors">
-                    Mohammad Saqib Hasan, Rukshar Alam, Muhammad Abdullah Adnan
-                </div>
-                <div class="publication-venue">
-                    2020 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2020)
-                </div>
-            </div>
-            <div class="publication-item">
-                <div class="publication-title">
-                    Compressed neural architecture utilizing dimensionality reduction and quantization <a href="https://link.springer.com/article/10.1007/s10489-022-03221-z" style="color: inherit; text-decoration: none;">🔗</a>
-                </div>
-                <div class="publication-authors">
-                    Mohammad Saqib Hasan, Rukshar Alam, Muhammad Abdullah Adnan
-                </div>
-                <div class="publication-venue">
-                    Applied Intelligence, Springer
-                </div>
-            </div>
-            <div class="publication-item">
-                <div class="publication-title">
-                    Neuro-Scientific Analysis of Weights in Neural Networks <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218001421520212" style="color: inherit; text-decoration: none;">🔗</a>
-                </div>
-                <div class="publication-authors">
-                    Mohammad Saqib Hasan, Rukshar Alam, Muhammad Abdullah Adnan
-                </div>
-                <div class="publication-venue">
-                    International Journal of Pattern Recognition and Artificial Intelligence (IJPRAI), World Scientific 
-                </div>
-            </div>
+        <!-- Work -->
+        <section id="work" class="section">
+            <div class="container">
+                <h2 class="section__title">Work Experience</h2>
 
-            <div class="publication-item">
-                <div class="publication-title">
-                    MuSciClaims: Multimodal Scientific Claim Verification <a href="https://www.arxiv.org/abs/2506.04585" style="color: inherit; text-decoration: none;">🔗</a>
-                </div>
-                <div class="publication-authors">
-                    Yash Kumar Lal, Manikanta Bandham, Mohammad Saqib Hasan, Apoorva Kashi, Mahnaz Koupaee, Niranjan Balasubramanian
-                </div>
-                <div class="publication-venue">
-                    Asia-Pacific Chapter of the Association for Computational Linguistics, 2025 (AACL 2025)
-                </div>
-            </div>
-            <div class="publication-item">
-                    <div class="publication-title">
-                        ProST: Progressive Sub-task Training for Pareto-Optimal Multi-agent Systems Using Small Language Models <a href="https://arxiv.org/abs/2509.04508" style="color: inherit; text-decoration: none;">🔗</a>
-                    </div>
-                    <div class="publication-authors">
-                        Biddut Sarker Bijoy, Mohammad Saqib Hasan, Pegah Alipoormolabashi, Avirup Sil, Aruna Balasubramanian, Niranjan Balasubramanian
-                    </div>
-                    <div class="publication-venue">
-                        Asia-Pacific Chapter of the Association for Computational Linguistics, 2025 (AACL 2025)
-                    </div>
-            </div>
-                        <div class="publication-item">
-                <div class="publication-title">
-                    Syntax Is Easy, Semantics Is Hard: Evaluating LLMs for LTL Translation <a href="https://dl.acm.org/doi/10.1145/3805773.3806005" style="color: inherit; text-decoration: none;">🔗</a>
-                </div>
-                <div class="publication-authors">
-                    Priscilla Kyei Danso, Mohammad Saqib Hasan, Niranjan Balasubramanian, Omar Chowdhury
-                </div>
-                <div class="publication-venue">
-                    2026 ACM Secure Development Conference (SecDev 2026)
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="timeline">
+                    <article class="timeline__item">
+                        <h3 class="timeline__title">Applied Scientist Intern</h3>
+                        <p class="timeline__org">Amazon</p>
+                        <p class="timeline__body">
+                            Developed GenAI systems for automated SOP creation and analysis of large-scale databases using advanced retrieval augmented generation techniques, problem-centric tool creation and multi-agent framework.
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">RAG</li>
+                            <li class="tag">Multi-Agent</li>
+                            <li class="tag">GenAI</li>
+                        </ul>
+                    </article>
 
-    <!-- Projects Section -->
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title"> RAG Agents for Scientific Claim Verification</h5>
-                            <p class="card-text">
-                                Built a real-time streamlit application that uses LLM agents and retrieval augmented generation to verify scientific claim validity. The system retrieves relevant scientific documents and generates responses based on the retrieved context.
-                            </p>
-                            <div class="mt-3">
-                                <span class="badge-custom">LLM Agents</span>
-                                <span class="badge-custom">RAG</span>
-                                <span class="badge-custom">Streamlit</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Ability of LLMs when Pretrained on Sequences Other than Natural Language</h5>
-                            <p class="card-text">
-                                Analyzed the ability of LLMs pretrained on sequences other than natural language. Observed that LLMs pretrained on structured sequences such as code and scientific reports exhibit stronger
-                                performance on downstream tasks compared to those pretrained on natural language.
-                            </p>
-                            <div class="mt-3">
-                                <span class="badge-custom">LLMs</span>
-                                <span class="badge-custom">Fine Tuning</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Weakly Supervised Active Learning for Named Entity Recognition</h5>
-                            <p class="card-text">
-                                Developed a novel training methodology that combines weak supervision and active learning to enhance named entity recognition performance with minimal annotated data.
-                            </p>
-                            <div class="mt-3">
-                                <span class="badge-custom">Active Learning</span>
-                                <span class="badge-custom">Weak Supervision</span>
-                                <span class="badge-custom">Named Entity Recognition</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Understanding Covid-19 Vaccination Data Across US Counties</h5>
-                            <p class="card-text">
-                                Analysed the various elements affecting the Covid-19 vaccination rates across different counties in the United States. This project involved analyzing vaccination rates using socio-economic variables & tweet sentiment, and developing models to predict future vaccination rates for each county.                              
-                            </p>
-                            <div class="mt-3">
-                                <span class="badge-custom">Data Science</span>
-                                <span class="badge-custom">Sentiment Analysis</span>
-                                <span class="badge-custom">Time Series Prediction</span>
-                            </div>
-                        </div>
-                    </div>
+                    <article class="timeline__item">
+                        <h3 class="timeline__title">Research Engineer</h3>
+                        <p class="timeline__org">Bangladesh University of Engineering &amp; Technology (BUET)</p>
+                        <p class="timeline__body">
+                            Conducted research on developing novel weight initialization for deep learning models, improving the paraemeter efficiency of neural networks using compression techniques and integrating active learning optimization strategies for efficient fake news detection.
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">Neural Compression</li>
+                            <li class="tag">Weight Initialization</li>
+                            <li class="tag">Active Learning</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CV Section -->
-    <section id="cv" class="section">
-        <div class="container">
-            <h2 class="section-title">Curriculum Vitae</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <p class="lead">
-                        Download my complete curriculum vitae for detailed information about my academic background, research experience, and accomplishments.
-                    </p>
-                    <a href="./img/resume.pdf" class="btn btn-primary btn-lg mt-3">
-                        <i class="fas fa-download me-2"></i>
-                        Download CV (PDF)
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section__title">Education</h2>
+
+                <div class="timeline">
+                    <article class="timeline__item">
+                        <span class="timeline__date">Aug 2021 &ndash; Present</span>
+                        <h3 class="timeline__title">Ph.D. in Computer Science</h3>
+                        <p class="timeline__org">Stony Brook University</p>
+                        <dl class="meta-list">
+                            <dt>Advisor</dt>
+                            <dd>Niranjan Balasubramanian</dd>
+                            <dt>Dissertation</dt>
+                            <dd>Advancing Code Generation through Context</dd>
+                        </dl>
+                    </article>
+
+                    <article class="timeline__item">
+                        <span class="timeline__date">Jul 2014 &ndash; Oct 2018</span>
+                        <h3 class="timeline__title">B.Sc. in Computer Science</h3>
+                        <p class="timeline__org">Bangladesh University of Engineering and Technology (BUET)</p>
+                        <dl class="meta-list">
+                            <dt>Standing</dt>
+                            <dd>Graduated with Honors (Rank 20 out of 138)</dd>
+                            <dt>Advisor</dt>
+                            <dd>Muhammad Abdullah Adnan</dd>
+                            <dt>Thesis</dt>
+                            <dd>Analysis of Weight Distribution and Initialization in Neural Network Inspired by Neuro-science</dd>
+                        </dl>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications" class="section">
+            <div class="container">
+                <h2 class="section__title">Publications</h2>
+
+                <div class="pub-year">
+                    <h3 class="pub-year__label">2026</h3>
+                    <ul>
+                        <li class="pub">
+                            <h4 class="pub__title">
+                                <a href="https://dl.acm.org/doi/10.1145/3805773.3806005" target="_blank" rel="noopener noreferrer">Syntax Is Easy, Semantics Is Hard: Evaluating LLMs for LTL Translation</a>
+                            </h4>
+                            <p class="pub__authors">
+                                Priscilla Kyei Danso, <strong>Mohammad Saqib Hasan</strong>, Niranjan Balasubramanian, Omar Chowdhury
+                            </p>
+                            <div class="pub__footer">
+                                <span class="pub__venue">2026 ACM Secure Development Conference (SecDev 2026)</span>
+                                <span class="pub__links">
+                                    <a class="pub-link" href="https://dl.acm.org/doi/10.1145/3805773.3806005" target="_blank" rel="noopener noreferrer">
+                                        DOI<svg aria-hidden="true"><use href="#i-external"></use></svg>
+                                        <span class="visually-hidden">for Syntax Is Easy, Semantics Is Hard</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pub-year">
+                    <h3 class="pub-year__label">2025</h3>
+                    <ul>
+                        <li class="pub">
+                            <h4 class="pub__title">
+                                <a href="https://arxiv.org/abs/2506.00419" target="_blank" rel="noopener noreferrer">Teaching an Old LLM Secure Coding: Localized Preference Optimization with Distilled Preferences</a>
+                            </h4>
+                            <p class="pub__authors">
+                                <strong>Mohammad Saqib Hasan</strong>, Saikat Chakraborty, Santu Karmaker, Niranjan Balasubramanian
+                            </p>
+                            <div class="pub__footer">
+                                <span class="pub__venue">The 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)</span>
+                                <span class="pub__links">
+                                    <a class="pub-link" href="https://arxiv.org/abs/2506.00419" target="_blank" rel="noopener noreferrer">
+                                        arXiv<svg aria-hidden="true"><use href="#i-external"></use></svg>
+                                        <span class="visually-hidden">for Teaching an Old LLM Secure Coding</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="pub">
+                            <h4 class="pub__title">
+                                <a href="https://www.arxiv.org/abs/2506.04585" target="_blank" rel="noopener noreferrer">MuSciClaims: Multimodal Scientific Claim Verification</a>
+                            </h4>
+                            <p class="pub__authors">
+                                Yash Kumar Lal, Manikanta Bandham, <strong>Mohammad Saqib Hasan</strong>, Apoorva Kashi, Mahnaz Koupaee, Niranjan Balasubramanian
+                            </p>
+                            <div class="pub__footer">
+                                <span class="pub__venue">Asia-Pacific Chapter of the Association for Computational Linguistics, 2025 (AACL 2025)</span>
+                                <span class="pub__links">
+                                    <a class="pub-link" href="https://www.arxiv.org/abs/2506.04585" target="_blank" rel="noopener noreferrer">
+                                        arXiv<svg aria-hidden="true"><use href="#i-external"></use></svg>
+                                        <span class="visually-hidden">for MuSciClaims</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="pub">
+                            <h4 class="pub__title">
+                                <a href="https://arxiv.org/abs/2509.04508" target="_blank" rel="noopener noreferrer">ProST: Progressive Sub-task Training for Pareto-Optimal Multi-agent Systems Using Small Language Models</a>
+                            </h4>
+                            <p class="pub__authors">
+                                Biddut Sarker Bijoy, <strong>Mohammad Saqib Hasan</strong>, Pegah Alipoormolabashi, Avirup Sil, Aruna Balasubramanian, Niranjan Balasubramanian
+                            </p>
+                            <div class="pub__footer">
+                                <span class="pub__venue">Asia-Pacific Chapter of the Association for Computational Linguistics, 2025 (AACL 2025)</span>
+                                <span class="pub__links">
+                                    <a class="pub-link" href="https://arxiv.org/abs/2509.04508" target="_blank" rel="noopener noreferrer">
+                                        arXiv<svg aria-hidden="true"><use href="#i-external"></use></svg>
+                                        <span class="visually-hidden">for ProST</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pub-year">
+                    <h3 class="pub-year__label">2024</h3>
+                    <ul>
+                        <li class="pub">
+                            <h4 class="pub__title">
+                                <a href="https://arxiv.org/abs/2509.08808" target="_blank" rel="noopener noreferrer">Handling Open-Vocabulary Constructs in Formalizing Specifications: Retrieval Augmented Parsing</a>
+                            </h4>
+                            <p class="pub__authors">
+                                <strong>Mohammad Saqib Hasan</strong>, Sayontan Ghosh, Dhruv Verma, Geoff Kuenning, Erez Zadok, Scott Smolka, Niranjan Balasubramanian
+                            </p>
+                            <div class="pub__footer">
+                                <span class="pub__venue">First Conference on Language Modelling (COLM 2024)</span>
+                                <span class="pub__links">
+                                    <a class="pub-link" href="https://arxiv.org/abs/2509.08808" target="_blank" rel="noopener noreferrer">
+                                        arXiv<svg aria-hidden="true"><use href="#i-external"></use></svg>
+                                        <span class="visually-hidden">for Handling Open-Vocabulary Constructs</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pub-year">
+                    <h3 class="pub-year__label">2023</h3>
+                    <ul>
+                        <li class="pub">
+                            <h4 class="pub__title">
+                                <a href="https://link.springer.com/article/10.1007/s10489-022-03221-z" target="_blank" rel="noopener noreferrer">Compressed neural architecture utilizing dimensionality reduction and quantization</a>
+                            </h4>
+                            <p class="pub__authors">
+                                <strong>Mohammad Saqib Hasan</strong>, Rukshar Alam, Muhammad Abdullah Adnan
+                            </p>
+                            <div class="pub__footer">
+                                <span class="pub__venue">Applied Intelligence, Springer</span>
+                                <span class="pub__links">
+                                    <a class="pub-link" href="https://link.springer.com/article/10.1007/s10489-022-03221-z" target="_blank" rel="noopener noreferrer">
+                                        DOI<svg aria-hidden="true"><use href="#i-external"></use></svg>
+                                        <span class="visually-hidden">for Compressed neural architecture</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pub-year">
+                    <h3 class="pub-year__label">2021</h3>
+                    <ul>
+                        <li class="pub">
+                            <h4 class="pub__title">
+                                <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218001421520212" target="_blank" rel="noopener noreferrer">Neuro-Scientific Analysis of Weights in Neural Networks</a>
+                            </h4>
+                            <p class="pub__authors">
+                                <strong>Mohammad Saqib Hasan</strong>, Rukshar Alam, Muhammad Abdullah Adnan
+                            </p>
+                            <div class="pub__footer">
+                                <span class="pub__venue">International Journal of Pattern Recognition and Artificial Intelligence (IJPRAI), World Scientific</span>
+                                <span class="pub__links">
+                                    <a class="pub-link" href="https://www.worldscientific.com/doi/abs/10.1142/S0218001421520212" target="_blank" rel="noopener noreferrer">
+                                        DOI<svg aria-hidden="true"><use href="#i-external"></use></svg>
+                                        <span class="visually-hidden">for Neuro-Scientific Analysis of Weights in Neural Networks</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pub-year">
+                    <h3 class="pub-year__label">2020</h3>
+                    <ul>
+                        <li class="pub">
+                            <h4 class="pub__title">
+                                <a href="https://ieeexplore.ieee.org/abstract/document/9381422" target="_blank" rel="noopener noreferrer">Truth or lie: Pre-emptive detection of fake news in different languages through entropy-based active learning and multi-model neural ensemble</a>
+                            </h4>
+                            <p class="pub__authors">
+                                <strong>Mohammad Saqib Hasan</strong>, Rukshar Alam, Muhammad Abdullah Adnan
+                            </p>
+                            <div class="pub__footer">
+                                <span class="pub__venue">2020 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2020)</span>
+                                <span class="pub__links">
+                                    <a class="pub-link" href="https://ieeexplore.ieee.org/abstract/document/9381422" target="_blank" rel="noopener noreferrer">
+                                        DOI<svg aria-hidden="true"><use href="#i-external"></use></svg>
+                                        <span class="visually-hidden">for Truth or lie</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section__title">Projects</h2>
+
+                <div class="cards">
+                    <article class="card">
+                        <h3 class="card__title">RAG Agents for Scientific Claim Verification</h3>
+                        <p class="card__body">
+                            Built a real-time streamlit application that uses LLM agents and retrieval augmented generation to verify scientific claim validity. The system retrieves relevant scientific documents and generates responses based on the retrieved context.
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">LLM Agents</li>
+                            <li class="tag">RAG</li>
+                            <li class="tag">Streamlit</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card__title">Ability of LLMs when Pretrained on Sequences Other than Natural Language</h3>
+                        <p class="card__body">
+                            Analyzed the ability of LLMs pretrained on sequences other than natural language. Observed that LLMs pretrained on structured sequences such as code and scientific reports exhibit stronger performance on downstream tasks compared to those pretrained on natural language.
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">LLMs</li>
+                            <li class="tag">Fine Tuning</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card__title">Weakly Supervised Active Learning for Named Entity Recognition</h3>
+                        <p class="card__body">
+                            Developed a novel training methodology that combines weak supervision and active learning to enhance named entity recognition performance with minimal annotated data.
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">Active Learning</li>
+                            <li class="tag">Weak Supervision</li>
+                            <li class="tag">Named Entity Recognition</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card__title">Understanding Covid-19 Vaccination Data Across US Counties</h3>
+                        <p class="card__body">
+                            Analysed the various elements affecting the Covid-19 vaccination rates across different counties in the United States. This project involved analyzing vaccination rates using socio-economic variables &amp; tweet sentiment, and developing models to predict future vaccination rates for each county.
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">Data Science</li>
+                            <li class="tag">Sentiment Analysis</li>
+                            <li class="tag">Time Series Prediction</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV -->
+        <section id="cv" class="section">
+            <div class="container">
+                <h2 class="section__title">Curriculum Vitae</h2>
+
+                <div class="cv">
+                    <div class="cv__text">
+                        <p class="cv__lead">
+                            Download my complete curriculum vitae for detailed information about my academic background, research experience, and accomplishments.
+                        </p>
+                        <p class="cv__updated">PDF &middot; Last updated October 2025</p>
+                    </div>
+                    <a class="btn btn--primary" href="./cv/Mohammad_Saqib_Hasan_CV.pdf">
+                        <svg aria-hidden="true"><use href="#i-download"></use></svg>
+                        Download CV
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-10">
-                    <div class="contact-info">
-                        <h4 class="mb-3">Let's Connect</h4>
-                        <p class="mb-4" style="color: var(--secondary-color); font-size: 1.1rem;">
-                            Always open to discussing research, collaborations, and new opportunities in NLP.
-                        </p>
-                        
-                        <div class="contact-links">
-                            <a href="mailto:mdsaqib.hasan@stonybrook.edu" class="contact-link">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-label">Email</div>
-                                <div class="contact-value">Drop a line</div>
-                            </a>
-                            
-                            <a href="https://www.linkedin.com/in/mohammad-saqib-hasan-a4b326121/" target="_blank" class="contact-link">
-                                <div class="contact-icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </div>
-                                <div class="contact-label">LinkedIn</div>
-                                <div class="contact-value">Connect</div>
-                            </a>
-                            
-                            <a href="https://github.com/SaqibHasan057" target="_blank" class="contact-link">
-                                <div class="contact-icon">
-                                    <i class="fab fa-github"></i>
-                                </div>
-                                <div class="contact-label">GitHub</div>
-                                <div class="contact-value">Code</div>
-                            </a>
-                            
-                            <a href="https://scholar.google.com/citations?user=JO4sZ1EAAAAJ&hl=en" target="_blank" class="contact-link">
-                                <div class="contact-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="contact-label">Scholar</div>
-                                <div class="contact-value">Research</div>
-                            </a>
-                            
-                            <a href="https://x.com/msaquibhasan" target="_blank" class="contact-link">
-                                <div class="contact-icon">
-                                    <i class="fab fa-twitter"></i>
-                                </div>
-                                <div class="contact-label">Twitter</div>
-                                <div class="contact-value">Follow</div>
-                            </a>
-                        </div>
-                        
-                        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
-                            <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">
-                                <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>
-                                CS Department • Stony Brook University • Stony Brook, NY
-                            </p>
-                        </div>
-                    </div>
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section__title">Contact</h2>
+
+                <p class="contact__lead">
+                    Always open to discussing research, collaborations, and new opportunities in NLP.
+                </p>
+
+                <div class="contact__links">
+                    <a class="contact-link" href="mailto:mdsaqib.hasan@stonybrook.edu">
+                        <svg aria-hidden="true"><use href="#i-mail"></use></svg>
+                        mdsaqib.hasan@stonybrook.edu
+                    </a>
+                    <a class="contact-link" href="https://www.linkedin.com/in/mohammad-saqib-hasan-a4b326121/" target="_blank" rel="noopener noreferrer">
+                        <svg aria-hidden="true"><use href="#i-linkedin"></use></svg>
+                        LinkedIn
+                    </a>
+                    <a class="contact-link" href="https://github.com/SaqibHasan057" target="_blank" rel="noopener noreferrer">
+                        <svg aria-hidden="true"><use href="#i-github"></use></svg>
+                        GitHub
+                    </a>
+                    <a class="contact-link" href="https://scholar.google.com/citations?user=JO4sZ1EAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+                        <svg aria-hidden="true"><use href="#i-scholar"></use></svg>
+                        Google Scholar
+                    </a>
+                    <a class="contact-link" href="https://x.com/msaquibhasan" target="_blank" rel="noopener noreferrer">
+                        <svg aria-hidden="true"><use href="#i-x"></use></svg>
+                        X
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    
+                <p class="contact__location">
+                    <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+                    Department of Computer Science &middot; Stony Brook University &middot; Stony Brook, NY
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span>&copy; 2026 Mohammad Saqib Hasan</span>
+            <a href="#intro">Back to top</a>
+        </div>
+    </footer>
 </body>
 </html>
