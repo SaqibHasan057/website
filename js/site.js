@@ -19,7 +19,7 @@
         root.setAttribute("data-theme", theme);
         if (toggle) {
             toggle.setAttribute("aria-label",
-                theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
+                theme === "light" ? "Switch to light theme" : "Switch to dark theme");
         }
         try {
             localStorage.setItem("theme", theme);
